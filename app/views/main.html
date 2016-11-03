@@ -76,10 +76,16 @@
 		<![endif]-->
 		
 		<header id="header" class="clearfix" role="banner">
-		    <a id="logo" href="@{Application.index()}" title="Antre Manuel'Art, artisanat en tout genre...">
-		        <img id="company-logo" class="img" alt="Logo de Antre Manuel'Art" src="@{'/public/images/logo.jpg'}" />
-		    </a>
-		    #{menu-header /}
+		    <section id="logo">
+		       	 <a href="@{Application.index()}" title="Antre Manuel'Art, artisanat en tout genre...">
+		       	 <img id="company-logo" class="img" alt="Logo de Antre Manuel'Art" src="@{'/public/images/logo.jpg'}" />
+		    	</a>
+		    </section>
+		    <section id="header-droit">
+		    	#{connexion-header /}
+		    	#{menu-header /}
+		    </section>
+		    
 		   
 		</header>
 		<div id="page-content" itemscope itemtype="http://schema.org/WebPage">
